@@ -1,0 +1,84 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    font-family: sans-serif;
+    color: #333;
+}
+
+ul{
+    list-style: none;
+}
+
+/* layout */
+
+.invite{
+    background-color: #eee;
+    margin: 20px auto;
+    padding: 5% 10%;
+    text-align: center;
+    width: 100%;
+    max-width: 870px;
+}
+
+.invite .icon{
+    border: 2px solid #5ac6d0;
+    border-radius: 50%;
+    display: inline-block;
+    height: 56px;
+    width: 56px;
+    margin-bottom: 35px;
+    line-height: 56px;
+    text-align: center;
+}
+
+.invite .icon i{
+    font-size: 24px;
+    color: #5ac6d0;
+}
+
+.invite h2{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.invite .info{
+    margin-bottom: 25px;
+}
+
+.invite form .email{
+    margin-bottom: 16px;
+}
+
+.invite form input[type='email']{
+    background-color: #fff;
+    border: 1px solid #eee;
+    padding: 20px 10px;
+    border-radius: 4px ;
+    font-size: 16px;
+    width: 50%;
+    max-width: 370px;
+}
+
+.invite form button{
+    background-color: #70cbce;
+    border: 1px solid #70cbce;
+    border-radius: 4px;
+    padding: 0 30px;
+    height: 50px;
+    min-height: 50px;
+    transition: 0.3s all;
+    color: #fff;
+    width: 50%;
+    max-width: 370px;
+}
+
+.invite form button:hover{
+    background-color: #de4a1e;
+    border: 1px solid #de4a1e;
+}

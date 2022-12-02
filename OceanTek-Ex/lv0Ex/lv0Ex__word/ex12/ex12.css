@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand",sans-serif;
+}
+
+body{
+    --color-primary: #009579;
+    --color-primary-dark: #007f67;
+    --color-secondary: #252c6e;
+    --color-tertiary:#7DCEFD;
+    --color-error: #cc3333;
+    --color-success: #4bb544;
+    --border-radius: 4px;
+
+
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+
+    align-items: center;
+    font-size: 18px;
+    background-color: #fff;
+    background-size: cover;
+}
+
+ul{
+    list-style: none;
+}
+
+/* layout */
+
+.big-container{
+    padding: 5%;
+}
+
+.heading::after {
+    background-color: #ffb737;
+    bottom: -5px;
+    content: '';
+    display: block;
+    left: 0;
+    height: 3px;
+    width: 60px;
+    
+}
+
+.form-box{
+    display: grid;
+    margin-top: 1rem;
+}
+
+.form-info{
+    color: gray;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-info ul li {
+    margin-top: .5rem;
+    margin-left: .5rem;
+    display: grid;
+    grid-template-columns: 50px auto;
+    align-items: center;
+    }
+
+
+.form-info ul li i {
+    background: #fff;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-right: .5rem;
+}
+
+.form-input {
+    padding:2rem 0;
+    background: #fff;
+    width: 100%;
+    /* margin-right: 2rem; */
+}
+
+.form-input h3 {
+    margin: 0 0 1rem 0;
+    color: gray;
+}
+
+.form-input form {
+    display: grid;
+    
+}
+
+.form-input input {
+    height: 2.5rem;
+    text-indent: 1em;
+    border: .5px solid #149cc567;
+}
+
+.form-input p{
+    margin-top: .5rem ;
+}
+
+.form-input input {
+    width: 100%;
+}
+
+.form-input form textarea {
+    height: 6rem;
+    padding: 1em;
+    border: .5px solid #149cc567;
+    resize: vertical;
+    width: 100%;
+}
+
+
+.form-input button {
+    width: 100%;
+    margin: 1rem 0 2rem 0;
+    padding: 1rem;
+    background: var(--color-tertiary);
+    border: none;
+    outline: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.form-input form button:hover {
+    background: #fff;
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+}
+
+@media screen and (min-width:553px){
+    .form-box{
+        display:flex;
+        flex-flow: row; 
+    }
+    .form-input{
+        padding: 0;
+        margin-left: 20px;
+    }
+    .form-input button{
+        width: 150px;
+    }
+}

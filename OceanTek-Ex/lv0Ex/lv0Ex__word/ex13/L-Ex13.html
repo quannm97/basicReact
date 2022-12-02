@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>ex13</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Quicksand", sans-serif;
+      }
+
+      body {
+        --color-primary: #009579;
+        --color-primary-dark: #007f67;
+        --color-secondary: #252c6e;
+        --color-tertiary: #7dcefd;
+        --color-error: #cc3333;
+        --color-success: #4bb544;
+        --border-radius: 4px;
+
+        margin: 0;
+        height: 100vh;
+        width: 100vw;
+
+        align-items: center;
+        font-size: 18px;
+        background-color: #fff;
+        background-size: cover;
+      }
+
+      .container {
+        display: grid;
+      }
+
+      .header {
+        text-align: center;
+      }
+
+      .header::after {
+        content: "";
+        height: 2px;
+        width: 10%;
+        background: var(--color-tertiary);
+        position: absolute;
+        left: calc(45%);
+      }
+
+      .content {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding: 1rem;
+      }
+
+      .card {
+        position: relative;
+        margin: 1rem;
+      }
+
+      .card___left {
+        background: #009579;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        position: absolute;
+      }
+
+      .card___left h1 {
+        position: relative;
+        color: #fff;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 23px;
+        /* width: fit-content; */
+      }
+
+      .card__right {
+        margin-left: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">
+        <div class="header">
+          <h2><b>WHAT OUR CLIENTS SAY</b></h2>
+        </div>
+      </div>
+      <div class="content">
+        <div class="card">
+          <div class="card___left"><h1>H</h1></div>
+          <div class="card__right">
+            <i
+              >"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua."</i
+            >
+            <h3>John Doe</h3>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card___left"><h1>H</h1></div>
+          <div class="card__right">
+            <i>"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</i>
+            <h3>Johnathan Doe</h3>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card___left"><h1>H</h1></div>
+          <div class="card__right">
+            <i
+              >"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua."</i
+            >
+            <h3>John Doe</h3>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card___left"><h1>H</h1></div>
+          <div class="card__right">
+            <i>"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</i>
+            <h3>Johnathan Doe</h3>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card___left"><h1>H</h1></div>
+          <div class="card__right">
+            <i
+              >"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua."</i
+            >
+            <h3>John Doe</h3>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card___left"><h1>H</h1></div>
+          <div class="card__right">
+            <i>"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</i>
+            <h3>Johnathan Doe</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

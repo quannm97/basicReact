@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Image guess
+        </title>
+        <style>
+            body{margin:20px;}
+            img{margin:20px;}
+        </style>
+        <script>
+            window.onload=init;
+
+            function init() {
+                var image=document.getElementById("zero");
+                image.onclick=showAnswer;
+};
+
+            function showAnswer() {
+                var image=document.getElementById("zero");
+                image.src="Julia.PNG";
+}
+        </script>
+    </head>
+    <body>
+        <img id="zero" src="Juliablur.png">
+    </body>
+</html>

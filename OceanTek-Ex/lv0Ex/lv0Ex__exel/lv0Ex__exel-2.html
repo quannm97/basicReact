@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Ex2__excel</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body{
+                width: 100%;
+            }
+            
+            ul.Ex2__container{
+                list-style: none;
+                text-align: center;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            /*li.Ex2__container{
+                display: inline-block;
+                font-size: 20px;
+                padding: 20px;
+                color: red;
+                position: relative;
+            }*/
+            .Ex2__container__oddNmb{
+                color: red;
+                display: inline-block;
+                font-size: 20px;
+                padding: 20px;
+                position: relative;
+            }
+            .Ex2__container__evenNmb{
+                color: green;
+                display: inline-block;
+                font-size: 20px;
+                padding: 20px;
+                position: relative;
+            }
+            @media only screen and (min-width:320px){
+                .Ex2__container__oddNmb{
+                    color: red;
+                    font-size: 20px;
+                }
+                .Ex2__container__evenNmb{
+                    color: green;
+                    font-size: 30px;
+                }
+            }
+            @media only screen and (min-width:425px){
+                .Ex2__container__oddNmb{
+                    color: yellow;
+                    font-size: 20px;
+                }
+                .Ex2__container__evenNmb{
+                    color: red;
+                    font-size: 50px;
+                }
+            }
+             @media only screen and (min-width:768px){
+                .Ex2__container__oddNmb{
+                    color: brown;
+                    font-size: 30px;
+                }
+                .Ex2__container__evenNmb{
+                    color: yellow;
+                    font-size: 40px;
+                }
+            }
+            @media only screen and (min-width:992px){
+                .Ex2__container__oddNmb{
+                    color: yellow;
+                    font-size: 30px;
+                }
+                .Ex2__container__evenNmb{
+                    color: purple;
+                    font-size: 40px;
+                }
+            }
+            @media only screen and (min-width:1200px){
+                .Ex2__container__oddNmb{
+                    color: purple;
+                    font-size: 50px;
+                }
+                .Ex2__container__evenNmb{
+                    color: pink;
+                    font-size: 100px;
+                }
+            } 
+        </style>
+    </head>
+    <body>
+        <div class="Ex2__container">
+            <ul>
+                <li class="Ex2__container__oddNmb">A1</li>
+                <li class="Ex2__container__evenNmb">A2</li>
+                <li class="Ex2__container__oddNmb">A3</li>
+                <li class="Ex2__container__evenNmb">A4</li>
+                <li class="Ex2__container__oddNmb">A5</li>
+                <li class="Ex2__container__evenNmb">A6</li>
+                <li class="Ex2__container__oddNmb">A7</li>
+                <li class="Ex2__container__evenNmb">A8</li>
+                <li class="Ex2__container__oddNmb">A9</li>
+                <li class="Ex2__container__evenNmb">A10</li>
+                <li class="Ex2__container__oddNmb">A11</li>
+                <li class="Ex2__container__evenNmb">A12</li>
+            </ul>
+        </div> 
+    </body>
+</html>

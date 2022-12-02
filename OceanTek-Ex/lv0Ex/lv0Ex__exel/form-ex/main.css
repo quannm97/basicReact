@@ -1,0 +1,273 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  --color-primary: #009579;
+  --color-primary-dark: #007f67;
+  --color-secondary: #252c6e;
+  --color-error: #cc3333;
+  --color-success: #4bb544;
+  --border-radius: 4px;
+
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  /* background: url(./background.jpg); */
+  background: #eee;
+  background-size: cover ;
+  font: 500 1rem 'Quicksand',sand-serif;
+}
+
+
+.sign-in-form{
+    width: 400px;
+    max-width: 400px;
+    margin: 1rem;
+    padding: 2rem;
+    box-shadow: 0 0 40px rgba(0,0,0,0.2);
+    border-radius: var(--border-radius);
+    background: #fff;
+}
+
+.sign-in-form,
+.input__box,
+.button
+.forgot-password-form{
+  font: 500 1rem 'Quicksand',sand-serif;
+}
+
+.form--hidden{
+  display: none;
+}
+
+.sign-in-form >*:first-child{
+  margin-top: 0;
+}
+
+
+.sign-in-form >*:last-child{
+  margin-bottom: 0;
+}
+
+.header{
+  margin-bottom: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.icon__close{
+  position: absolute;
+  right: 0%;
+}
+
+.icon__close:hover{
+  cursor: pointer;
+}
+
+.icon__close:active{
+  transform: scale(0.9);
+}
+
+.form__message{
+  /* text-align: center; */
+  margin-bottom: 1rem ;
+}
+
+
+.form__message--error{
+  color: var(--color-error);
+}
+
+
+.form__message--success{
+  color: var(--color-success);
+  margin-top: 0.5rem;
+}
+
+.input__box-group{
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.input__box{
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  box-sizing: border-box;
+  border-radius: var(--border-radius);
+  border: 1px solid #ddd;
+  outline: none;
+  background:#eee;
+  transition: background 0.2s , border-color 0.2s;
+
+  padding-left: 35px;
+}
+
+
+.input__box-group .icon__form{
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  color:gray ;
+  transform: translateY(-50%);
+}
+
+
+.input__box:focus{
+  border-color: var(--color-primary);
+  background: #fff;
+}
+
+
+.form__message--error{
+  color: var(--color-error);
+  border-color: var(--color-error);
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+}
+
+
+.button{
+  width: 100%;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #fff;
+  border: none;
+  border-radius: var(--border-radius);
+  outline: none;
+  cursor: pointer;
+  background:var(--color-primary);
+  min-height: 50px;
+}
+
+
+
+.button:hover{
+  background: var(--color-primary-dark);
+}
+
+.button:active{
+  transform: scale(0.98);
+}
+
+
+.form__button{
+  position: relative;
+}
+
+#nutdangnhap{
+  margin: 0 30px;
+}
+
+#chngpsmessage{
+  text-align: center;
+}
+
+
+.button__icon{
+  content: "";
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        /* background-color: red; */
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        border: 5px solid transparent;
+        border-top-color: rgb(222, 222, 233);
+        border-radius: 50%;
+        animation: btn--loading--spinner 1s ease infinite;
+}
+
+@keyframes btn--loading--spinner{
+  from {
+    transform: rotate(0 turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+.footer{
+  color: var(--color-secondary);
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  margin: 20px;
+}
+
+.footer:hover{
+  text-decoration: underline;
+}
+
+/* Bootstrap */
+
+.forgot-password-form{
+  width: 400px;
+  max-width: 400px;
+  margin: 1rem;
+  padding: 2rem;
+  box-shadow: 0 0 40px rgba(0,0,0,0.2);
+  border-radius: var(--border-radius);
+  background: #fff;
+}
+
+.forgot-password-form .form-name{
+  text-align: center;
+  margin: auto;
+  margin-bottom: 25px;
+}
+
+.fgclose{
+  float:right;
+  border: none;
+  background: #fff;
+}
+
+.fgclose:hover{
+  transform: scale(0.95);
+}
+
+.forgot-password-form .item{
+  border-radius: var(--border-radius);
+  margin-bottom: 25px;
+  padding: 10px 20px;
+  background: #eee;
+  padding-left: 35px;
+}
+
+.forgot-password-form .save-password{
+  border-radius: var(--border-radius);
+  padding: 10px 20px;
+  font-weight: bold;
+  background-color: var(--color-primary);
+  border: none;
+  margin-top: 20px;
+  color: #fff;
+}
+
+.btn {
+  position: relative;
+  min-height: 50px;
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  border: 0;
+  border-radius: var();
+  margin: 5px 0;
+}
+
+.btn:hover{
+  text-decoration: none;
+  background: var(--color-primary-dark);
+}

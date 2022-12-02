@@ -1,0 +1,35 @@
+.home-side-1 {
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.home-side-1:not(:last-child) {
+  border-bottom: 1px solid #dedede;
+}
+
+.home-side-1 a {
+  width: 170px;
+}
+
+a {
+  color: black;
+}
+a:hover {
+  color: #1890ff;
+}
+
+.home-side-2,
+.home-side-3 {
+  padding: 15px 10px;
+}
+.home-side-3 {
+  margin-bottom: 10px;
+}
+.home-side-2 a {
+  font-size: 32px;
+}
+
+.home-side-3 a {
+  font-size: 16px;
+}

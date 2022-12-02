@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8">
+        <title>lesson4-1</title>
+        <style>
+            .page-wapper{
+                padding-top: 52px;
+                float: left;
+                position: relative;
+                margin: 0px;
+                border: 0;
+                font-size: 100%;
+            }
+            #widget-ticker{
+                background-size: contain;
+                position: absolute;
+            }
+
+            #hashtag-news{
+                display: flex;
+                flex-direction: row;
+                list-style: none;
+                margin: 20px;
+            }
+            .hashtag-item{
+                margin: 5px;
+            }
+            #main{
+                margin-top: 52px;
+                display: flex;
+            }
+            .artical-list{
+                float: right;
+                width: calc(66% - 20px);
+                padding-right: 20px;
+            }
+            .hot-news{
+                float:left;
+                width: 30%;
+                padding-left: 20px;
+            }
+            .artical-item{
+                float: left;
+                position: relative;
+                width: 100%;
+                font-family: 'Roboto', Ubuntu, sans-serif;
+                line-height: 1.4em;
+            }
+            .article-thumbnails{
+                position: absolute;
+                top:0 ;
+                left: 0;
+                width: 100%;
+                object-fit: cover;
+            }
+            article{
+                display: block;
+            }
+            /* img{
+                width: 200px;
+                height: 80px; */
+            }
+              </style>
+    </head>
+    <body>
+        <div class="page-wapper">
+            <section id="widget-ticker">
+                <div class="hashtag-trending">
+                        <ul id="hashtag-news">
+                            <li class="hashtag-item"><a href="" title="Zing từ Ukraine">Zing từ Ukraine</a></li>
+                            <li class="hashtag-item"><a href="" title="Nga tấn công Ukraine">Nga tấn công Ukraine</a></li>
+                            <li class="hashtag-item"><a href="" title="Số liệu Covid-19">Số liệu Covid-19</a></li>
+                            <li class="hashtag-item"><a href="" title="Khi trẻ em mắc Covid-19">Khi trẻ em mắc Covid-19</a></li>
+                        </ul>
+                </div>
+                <div id="place"></div>
+                <div id="weather-widget"></div>
+            </section>
+            <section id="main">
+                <div class="section-content">
+                    <div class="artical-list">
+                        <article class="artical-item" id="Yorn">
+                            <p class="article-thumbnails">
+                                <a href="https://www.nettruyenme.com/truyen-tranh/gia-dinh-diep-vien-21922">
+                                    <img src="https://fictionhorizon.com/wp-content/uploads/2022/05/maxresdefault-2-2-1024x576.jpg" alt="Thorn-princess" width=600px height= >
+                                </a>
+                            </p>
+                            <header>
+                                <p class="artical-title">Thornprincess so cuteeee!</p>
+                            </header>
+                        </article>
+                        <article class="artical-item" id="Anya">
+                            <p class="article-thumbnails">
+                                <a href="https://www.nettruyenme.com/truyen-tranh/gia-dinh-diep-vien-21922" >
+                                    <img src="https://i.ex-cdn.com/mgn.vn/files/content/2022/06/10/anya-forger-1152.jpg" alt="Anya-child">
+                                </a>    
+                            </p>
+                            <header>
+                                <p class="artical-title">Anya is kawaiiii</p>
+                            </header>
+                        </article>
+                        <article class="artical-item" id="Loid">
+                            <p class="article-thumbnails">
+                                <a href="https://www.nettruyenme.com/truyen-tranh/gia-dinh-diep-vien-21922">
+                                    <img src="https://cdn-amz.woka.io/images/I/71vMGRog+iL.jpg" alt="dad">
+                                </a>
+                            </p>
+                            <header>
+                                <p class="artical-title">Loid wa ikeiman</p>
+                            </header>
+                        </article>
+                    </div>
+                    <div class="hot-news">
+                        <article class="artical-item" id="eps1">
+                            <p class="article-thumbnails">
+                                <a href="https://www.animefeminist.com/spy-x-family-episode-1/">
+                                    <img src="https://i0.wp.com/www.animefeminist.com/wp-content/uploads/2022/04/SpyFam1-5.jpg?resize=1024%2C576&ssl=1" alt="Operation Strix">
+                                </a>
+                            </p>
+                            <header>
+                                <p class="artical-title">Operation Strix: Twilight, under the identity of Loid Forger, adopts Anya, who secretly has telepathic abilities</p>
+                            </header>
+                        </article>
+                        <article class="artical-item" id="eps2">
+                            <p class="article-thumbnails">
+                                <a href="https://animenewsandfacts.com/spy-x-family-episode-2-release-date-countdown-spoilers-watch-online/">
+                                    <img src="https://comicyears.com/wp-content/uploads/2022/04/2824c-16501342563170-1920.jpg" alt="Secure a Wife">
+                                </a>
+                            </p>
+                            <header>
+                                <p class="artical-title">Secure a Wife: At a tailor shop, Loid and Yor encounter each other and they agree to form a partnership out of convenience</p>
+                            </header>
+                        </article>
+                        <article class="artical-item" id="eps3">
+                            <p class="article-thumbnails">
+                                <a href="https://www.sportskeeda.com/anime/spy-x-family-episode-3-what-expect-watch-release-date-time">
+                                    <img src="https://pic-bstarstatic.akamaized.net/ugc/7a6a91a84affd53382fcce9f38bbfd2e.jpeg" alt="Prepare for the Interview">
+                                </a>
+                            </p>
+                            <header>
+                                <p class="artical-title">Prepare for the Interview</p>
+                            </header>
+                        </article>
+                        <article class="artical-item" id="eps4">
+                            <p class="article-thumbnails">
+                                <a href="https://twitter.com/_SpyFamily_/status/1520458196258897920">
+                                    <img src="https://pbs.twimg.com/media/FRnAomCXwAISFFF.jpg:large" alt="The Prestigious School's Interview">
+                                </a>
+                            </p>
+                            <header>
+                                <p class="artical-title">The Prestigious School's Interview:As the Forgers arrive at Eden Academy for the interview, they impress Henry Henderson, one of the Housemasters, as they overcome multiple screening efforts, including stopping an accidental stampede from the school's farm animals</p>
+                            </header>
+                        </article>
+                        <article class="artical-item" id="eps5">
+                            <p class="article-thumbnails">
+                                <a href="https://twitter.com/spyfamily_en/status/1522984606412197889">
+                                    <img src="https://pbs.twimg.com/media/FSCV4hZVgAEt0Om.jpg" alt="Will They Pass or Fail">
+                                </a>
+                            </p>
+                            <header>
+                                <p class="artical-title">合否の行方: Despite failing the interview, Anya is first on the waiting list, thanks to Henderson's intervention, and is accepted into Eden Academy three days later</p>
+                            </header>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </div>  
+    </body>
+</html>

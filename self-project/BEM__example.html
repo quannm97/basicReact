@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <title>BEM</title>
+    <style>
+      .user {
+        width: 135px;
+        padding: 15ps;
+        box-sizing: border-box;
+        border: 1px solid #dddddd;
+        float: left;
+        margin-right: 10px;
+      }
+
+      .user--dark-theme {
+        background-color: #222222;
+      }
+
+      .user--dark-theme .fa-regular {
+        box-shadow: inset 0 2px 2px rgba(255, 255, 255, 0.35);
+      }
+
+      .user--dark-theme .user__name {
+        color: white;
+      }
+
+      .fa-regular {
+        width: fit-content;
+        display: block;
+        border-radius: 50%;
+        box-shadow: inset 2px 2px rgba(0, 0, 0, 0.35);
+        font-size: x-large;
+        padding: 10px;
+      }
+
+      .user__name {
+        font-weight: bold;
+        text-align: center;
+        font-size: 0.9rem;
+        padding: 10px 0;
+      }
+
+      .button {
+        width: 100%;
+        color: darkgray;
+        background-color: #dddddd;
+        padding: 7px 12px;
+        border: none;
+        outline: none;
+        border-radius: 2px;
+        cursor: pointer;
+      }
+
+      .button:active {
+        box-shadow: inset 0 0 4px rbga(0, 0, 0, 0.35);
+      }
+
+      .button--primary {
+        background: #2388e1;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="user">
+      <i class="fa-regular fa-user"></i>
+      <div class="user__name"></div>
+      <button class="button button--primary">View Profile</button>
+    </div>
+    <div class="user user--dark-theme">
+      <i class="fa-regular fa-user"></i>
+      <div class="user__name"></div>
+      <button class="button button--primary">View Profile</button>
+    </div>
+  </body>
+</html>

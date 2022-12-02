@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Ex1</title>
+        <style>
+            *{
+                margin: 0%;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body{
+                width: 100vw;
+            }
+            @media only screen and (max-width:780px) {
+                .A1{
+                    max-width: 500px;
+                }
+                .A2{
+                    max-width:250px;
+                }.A3{
+                    max-width:250px;
+                }.A4{
+                    max-width:350px;
+                }.A5{
+                    max-width:100px;
+                }
+            }
+
+            
+            .A1{
+                border: 5px solid red;
+                z-index: 2;
+                height: 2000px;
+                width: 1000px;
+                margin: 0%;
+            }
+            .A2{
+                position: fixed;
+                border: 5px solid rgb(17, 143, 67);
+                height: 100px;
+                width: 500px;
+                top: 0;
+                z-index: 2;
+            }
+            .A3{
+                position: fixed;
+                border: 5px solid rebeccapurple;
+                height: 100px;
+                width: 500px;
+                bottom: 0;
+            }
+            .A4{
+                position: absolute;
+                border: 5px solid yellow;
+                height: 700px;
+                width: 700px;
+                top: 250px;
+                
+            }
+            .A5{
+                left: 200px;
+                border: 5px solid rgb(183, 62, 62);
+                height: 200px;
+                width: 200px;
+                top: 450px;
+                position: sticky;
+            }
+            .A6{
+                left: 200px;
+                border: 5px solid rgb(48, 36, 177);
+                height: 200px;
+                width: 600px;
+                top: 500px;
+                position: absolute;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="A1">A1</div>
+            <div class="A2">A2</div>
+            <div class="A4">A4
+                <div class="A5">A5</div>
+            </div>
+            <div class="A3">A3</div>
+    </div>
+        <div class="A6">A6</div>
+    </body>
+</html>

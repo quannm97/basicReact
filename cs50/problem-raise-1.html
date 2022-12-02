@@ -1,0 +1,50 @@
+<!-- make chat box to input number -->
+<!-- check number of "#"'s conditional
+    if true print #
+    else ask user input again -->
+<!-- write a function to create # equal number -->
+    <!-- print "#" equal the valid number
+    2
+    -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Mario-ver-1</title>
+    </head>
+    <script>
+        var numb;
+        numb=prompt("type a number");
+        if (isNaN(numb)){
+            alert("pls enter number")
+        }else{
+            //check number <0 and >8
+                if(numb<0||numb>8){
+                    alert("pls enter valid number")
+                }else{
+                    // let i=0;
+                    // while(i<=numb)
+                    // do{
+                    //     i++;
+                    //     document.write("#");
+                    // }
+                    for(let i=0;i<=numb;i++){
+                        for (k=0;k<numb-i;k++){
+                            document.write("&nbsp")
+                        }
+                        for (j=0;j<=i;j++){
+                            document.write("#")
+                        }
+                        
+                        document.write("<br>")
+                    }
+                }
+        }
+
+    </script>
+    <body>
+ 
+    </body>
+</html>

@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: inherit;
+}
+
+body{
+    color: #191919;
+    font-size: 16px;
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+
+ul{
+    list-style: none;
+}
+
+body , html{
+    height: 100%;
+}
+
+
+.clearfix{
+    zoom:1;
+}
+
+.clearfix::after{
+    content: '';
+    clear: both;
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+/* layout */
+
+.container{
+    padding: 5% 10%;
+    display: flex;
+    flex-flow: column;
+}
+
+.container h2{
+    font-size: 22px;
+    font-weight: normal;
+    margin-bottom: 14px;
+}
+
+.container .card-list li {
+    background-color: #fbfbfb;
+    margin-bottom: 10px;
+    padding: 14px 15px 18px;
+    max-width: 934px;
+}
+
+.container .card-list{
+    display: flex;
+    flex-flow: column;
+}
+
+.container .card-list li:nth-child(2n) {
+    background-color: #f7f7f7;
+}
+
+.container .card__head {
+    position: relative;
+}
+
+.container .card__head .avatar{
+    border: 1px solid #d7d7d7;
+    font-size: 30px;
+    height: 50px;
+    line-height: 50px;
+    padding-top: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 50px;
+}
+
+.container .card__head .name {
+    font-weight: 600    ;
+    margin-bottom: 8px;
+}
+
+.container .card__head .name span {
+    color: #a2b70d;
+    font-style: normal;
+}
+
+.container .card__head .name .time {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+/* @media screen and (min-width:1024px) {
+    .container .card-list{
+        display: inline-block;
+        columns: 3;
+    }
+} */

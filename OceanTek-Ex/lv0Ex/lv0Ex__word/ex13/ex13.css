@@ -1,0 +1,129 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: inherit;
+}
+
+body{
+    color: #191919;
+    font-size: 16px;
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+
+ul{
+    list-style: none;
+}
+
+body , html{
+    height: 100%;
+}
+
+
+.clearfix{
+    zoom:1;
+}
+
+.clearfix::after{
+    content: '';
+    clear: both;
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+
+/* layout */
+
+.container{
+    padding: 5%;
+    background-color: #f2f3f5;
+}
+
+.container h2{
+    color: #333;
+    font-size: 34px;
+    font-weight: 600;
+    text-align: center;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.container h2::after{
+    content: '';
+    display: block;
+    height: 3px;
+    background-color: #627afe;
+    width: 60px;
+    left: 47%;
+    border-bottom: -5px;
+    position: absolute;
+}
+
+.container .el-list{
+    padding: 30px 10px;
+}
+
+.container .el-list li{
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.container .logo{
+    width: 66px;
+    height: 66px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    border-radius: 50%;
+    background-color: lightgreen;
+    color: #fff;
+    font-size: 40px;
+}
+
+.content p{
+    font-style: italic;
+    font-size: 12px;
+    color: lightgray;
+    margin-bottom: 25px;
+}
+
+.content h3{
+    font-size: 15px;
+    font-weight: 600;
+    color: #7c7c7c;
+}
+
+@media screen and (min-width:808px) {
+    .container .el-list {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .container .el-list li{
+        margin:30px;
+    }
+    
+}
+
+@media screen and (min-width:1024px) {
+    .container .el-list {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    .container .el-list li{
+        margin-bottom: 30px;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+       
+    .container .el-list li{
+        margin: 30px;
+    }
+}

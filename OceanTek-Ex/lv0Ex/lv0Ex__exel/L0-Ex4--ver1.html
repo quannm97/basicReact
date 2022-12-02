@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <title>FormEx</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100vw;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      }
+      .btn {
+        padding: 14px 28px;
+        margin: 2%;
+        color: white;
+        position: relative;
+      }
+      .btn:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+      }
+      .btn:active {
+        background-color: #007a63;
+      }
+      .btn__text {
+        transition: all 0.2s;
+        color: white;
+        font: bold 20px;
+      }
+      .btn--loading .btn__text {
+        visibility: hidden;
+        opacity: 0;
+      }
+      .btn--loading::after {
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        /* background-color: red; */
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        border: 5px solid transparent;
+        border-top-color: blue;
+        border-radius: 50%;
+        animation: btn--loading--spinner 1s ease infinite;
+      }
+      @keyframes btn--loading--spinner {
+        from {
+          transform: rotate(0 turn);
+        }
+        to {
+          transform: rotate(1turn);
+        }
+      }
+      .container {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        text-align: center;
+      }
+      .container__model {
+        /* display: none; */
+      }
+      .container__form {
+        display: flex;
+        flex-flow: column;
+        /* row-gap: 20px; */
+        border: solid gray;
+        border-radius: 5px;
+        margin: 15% 15%;
+      }
+      .container__form__header {
+        font-size: 25px;
+      }
+      .container__model__close {
+        color: #aaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+      }
+      .container__model__close:hover,
+      .container__model__close:focus {
+        transform: scale(1.1);
+        color: black;
+        cursor: pointer;
+      }
+      .container__form__main {
+        display: flex;
+        flex-flow: column;
+        transform: scale(0.8);
+      }
+
+      .container__form__input {
+        margin: 3%;
+        padding: 14px 25px;
+        flex-grow: 8;
+        border: none;
+      }
+      .container__form__sharp {
+        display: flex;
+        flex-flow: row;
+        padding: 1px 28px;
+        border: solid gray;
+        border-radius: 5px;
+        margin: 3%;
+      }
+      i {
+        margin-top: 5%;
+      }
+      .container__form__footer {
+        margin: 2%;
+        font-size: 70%;
+      }
+      .container__form__main__btn {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container__signIn">
+        <button class="btn" id="btn--SgIn">Đăng nhập hệ thống</button>
+      </div>
+      <div class="container__model">
+        <div class="container__form">
+          <div class="container__form__header">
+            <span class="container__model__close">&times;</span>
+            <br />
+            <p>Member Login</p>
+          </div>
+          <div class="container__form__main">
+            <div class="container__form__sharp">
+              <i class="fa-solid fa-lock"></i>
+              <input
+                type="text"
+                placeholder="Username"
+                class="container__form__input"
+                id="container__form__userName"
+              />
+            </div>
+            <div class="container__form__sharp">
+              <i class="fa-solid fa-user"></i>
+              <input
+                type="text"
+                placeholder="Password"
+                class="container__form__input"
+                id="container__form__passWord"
+              />
+            </div>
+            <p id="container__form__main--alert"></p>
+            <!-- <div class="container__form__main__btn"> -->
+            <button
+              type="button"
+              class="btn"
+              onclick="this.classList.toggle( 'btn--loading')"
+            >
+            <!-- <script>+;
+                
+                btn.classList.toggle("btn--loading");
+            </script> -->
+              <span class="btn__text">Login</span>
+            </button>
+            <!-- </div> -->
+          </div>
+          <div class="container__form__footer">Forgot Password?</div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="L0-Ex4.js"></script>
+</html>

@@ -1,0 +1,21 @@
+.title-header {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.title-header h1 {
+  font-size: 3rem;
+}
+
+.content-1 {
+  padding-right: 20px;
+}
+
+.content-2 {
+  padding-left: 20px;
+}
+
+.main-content {
+  border-top: 2px solid #000;
+  padding-top: 30px;
+}

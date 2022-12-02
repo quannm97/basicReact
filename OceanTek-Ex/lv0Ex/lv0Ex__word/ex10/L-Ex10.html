@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      />
+        <title>ex10</title>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+
+            body{
+                --color-primary: #009579;
+                --color-primary-dark: #007f67;
+                --color-secondary: #252c6e;
+                --color-error: #cc3333;
+                --color-success: #4bb544;
+                --border-radius: 4px;
+
+                margin: 0;
+                height: 100vh;
+                width: 100vw;
+
+                align-items: center;
+                font-size: 18px;
+                background-color: #eee;
+                background-size: cover;
+            }
+
+            .container{
+                display: flex;
+                flex-flow: column;
+                justify-content: center;
+            }
+
+            .elblock{
+                display: flex;
+                margin: 1rem;
+                
+            }
+
+            .elblock__icon{
+                border-radius: var(--border-radius);
+                background-color:#D997DE;
+                box-shadow: 0 0 40px rgba(0,0,0,0.2);
+                width: fit-content;
+                height: fit-content;
+                position: relative;
+                padding: 2em;
+                margin: 1rem;
+                color: #fff;
+            }
+
+            .content{
+                margin: 2rem;
+                display: flex;
+                flex-flow: column;
+                row-gap: 0.75rem;
+            }
+
+            .content__p{
+                color: gray;
+            }
+
+            .container__break-line{
+                border: none;
+                border-top: 1px dashed red;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="elblock">
+                <div class="elblock__icon"><h1>H</h1></div>
+                <div class="content">
+                    <h2 class="content__head">CLIMATE CHANGE</h2>
+                    <p class="content__p">day la 1 doan van tieng tay ban nha gom 2 dong va toi no idea about meaning</p>
+                </div>
+            </div>
+            <hr class="container__break-line">
+            <div class="elblock">
+                <div class="elblock__icon"><h1>H</h1></div>
+                <div class="content">
+                    <h2 class="content__head">COMPREHANSIVE IMMIGRATION REFORM</h2>
+                    <p class="content__p">day la 1 doan van tieng tay ban nha gom 2 dong va toi no idea about meaning</p>
+                </div>
+            </div>
+            <hr class="container__break-line">
+            <div class="elblock">
+                <div class="elblock__icon"><h1>H</h1></div>
+                <div class="content">
+                    <h2 class="content__head">ECONOMIC OPPORTUNITY</h2>
+                    <p class="content__p">day la 1 doan van tieng tay ban nha gom 2 dong va toi no idea about meaning</p>
+                </div>
+            </div><hr class="container__break-line">
+            <div class="elblock">
+                <div class="elblock__icon"><h1>H</h1></div>
+                <div class="content">
+                    <h2 class="content__head">HEALTH CARE</h2>
+                    <p class="content__p">day la 1 doan van tieng tay ban nha gom 2 dong va toi no idea about meaning</p>
+                </div>
+            </div>
+        </div> 
+    </body>
+</html>
